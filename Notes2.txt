@@ -8,7 +8,37 @@ echo "Number of Parameters passed:$#"
 #!/bin/sh
 echo "Script Name:$0" 
 
+How to check if the previous command was run successfully?
 The $? variable represents the exit status of the previous command.
+
+#!/bin/sh
+var=$?
+if var=0
+then
+echo "Script was Run successfully"
+else
+echo "Script was unsuccessful"
+fi
 
 tail -1 <filename>
 head -1 <filename>
+
+How to get the 3rd element/column from each line from a file?
+#!/bin/sh
+awk '{print $3}' $1
+
+The two methods to redirect standard output and standard error to the same location are the following;
+
+2>&1(# ls /usr/share/doc > out.txt 2>&1 )
+&>(# ls /usr/share/doc &> out.txt )
+
+
+$@ treats each quoted arguments as separate arguments but $* will consider the entire set of positional parameters as a single string.
+
+ [ -z “” ] && echo 0 || echo 1  -- check empty or not 
+ 
+ ${parameter:-word}
+    If parameter is unset or null, the expansion of word is substituted. 
+    Otherwise, the value of parameter is substituted.
+    
+    echo ${new:-variable} -- variable
