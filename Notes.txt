@@ -1,0 +1,31 @@
+Why u r learning shell --
+To automate daily backups and repetetive task
+for troubleshooting
+for installation and patching of software 
+for monitoring 
+
+Shell ---It is a command line interpreter and it translates every command entered by the user into the language understood by the Kernel.
+Shell Scripting -- shell scripts are the command line text file which consists of commands in the order of execution.
+
+There 2 types are shells in Linux operating system those are C shell and Bourne shell.
+The variants of these shells are as follows,
+C Shell – Z shell, C Shell and TENEX C shell
+Bourne shell – Korn shell, POSIX shell, Bourne shell, and Bourne-Again shell
+
+The break command lets us exit out of the current loop completely whether is while or until loops
+The continue command lets you skip 1 iteration of the loop but you will still stay inside the current loop.
+The test command is used to compare the text strings in shell scripts. 
+
+The system default permission values are 777 ( rwxrwxrwx ) for folders and 666 ( rw-rw-rw- ) for files.
+
+The first method is to put a debug command in the shell script program to output or display the error or bugs in the program
+The second method is to use a set –x to debug the script.
+
+a. dfspace command: - This is used in checking the free disk usage in terms of megabytes.
+b. df command: - This is used to check the free disk space
+c. du command: - This is used to check the directory wise disk usage
+
+Hard Link: Hard links are linked to the inode of the file and have to be on the same file system as of the file. Deleting the original file does not affect the hard link.
+Soft Link: Soft links are linked to the file name and can reside on a different file system as well. Deleting the original file makes the soft link inactive.
+
+The Shebang line is present at the top of the script,e.g. #!/bin/sh. It simply provides information regarding the location where the engine is placed. The engine is the one that executes the script. 
