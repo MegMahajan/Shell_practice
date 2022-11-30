@@ -33,6 +33,47 @@ The two methods to redirect standard output and standard error to the same locat
 &>(# ls /usr/share/doc &> out.txt )
 
 
+#!/bin/sh
+echo ${variable:x:y}
+#x - start position
+#y - length
+
+variable="My name is Upasana, and I work at Edureka."
+echo ${variable:11:7} # will display Upasana
+
+The $$ variable is the PID (Process IDentifier) of the currently running shell.
+
+#!/bin/sh
+
+for PID in $$
+do
+echo $PID
+done
+
+Crontab stands for cron table because it uses the job scheduler cron to execute tasks. The crontab is a list of commands that you want to run on a regular schedule, and also the name of the command used to manage that list. 
+
+The first five fields contain information on when to execute the command and they are as follows;
+
+minute(0-59)
+hour(0-23)
+day(1-31)
+month(1-12)
+day of the week(0-6, Sunday = 0).
+
+The contents of the file inside a jar can be read without extracting as shown below.
+
+tar –tvf <File Name>.tar
+
+!/bin/sh
+array=("This" "is" "Shell" "Scripting")
+echo ${array[@]}
+echo ${!array[@]}
+
+How to find all the files modified in less than 3 days and save the record in a text file?
+find . -type f -mtime -3 -exec ls -l {} ; > last3days.txt
+The schedule is called the crontab, which is also the name of the program used to edit that schedule.
+
+
 $@ treats each quoted arguments as separate arguments but $* will consider the entire set of positional parameters as a single string.
 
  [ -z “” ] && echo 0 || echo 1  -- check empty or not 
