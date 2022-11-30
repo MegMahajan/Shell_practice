@@ -1,0 +1,14 @@
+pass argument in shell 
+#!/bin/sh
+echo $1
+
+#!/bin/sh
+echo "Number of Parameters passed:$#" 
+
+#!/bin/sh
+echo "Script Name:$0" 
+
+The $? variable represents the exit status of the previous command.
+
+tail -1 <filename>
+head -1 <filename>
