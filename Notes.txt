@@ -17,6 +17,7 @@ The continue command lets you skip 1 iteration of the loop but you will still st
 The test command is used to compare the text strings in shell scripts. 
 
 The system default permission values are 777 ( rwxrwxrwx ) for folders and 666 ( rw-rw-rw- ) for files.
+The value assigned by the umask command is subtracted from the default.
 
 The first method is to put a debug command in the shell script program to output or display the error or bugs in the program
 The second method is to use a set –x to debug the script.
