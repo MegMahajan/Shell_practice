@@ -1,0 +1,17 @@
+vi /scripts/ecommerce_backup.sh
+
+#!/bin/bash
+zip -r /backup/xfusioncorp_ecommerce.zip /var/www/html/ecommerce
+scp /backup/xfusioncorp_ecommerce.zip clint@stbkp01:/backup
+
+
+ssh-keygen
+ssh-copy-id clint@stbkp01
+ssh clint@stbkp01
+logout
+
+sh ecommerce_backup.sh
+
+ll /backup
+ssh clint@stbkp01
+ll /backup
